@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           basiclti
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          basiclti
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        name: {label: Name}
+        title: {label: Title}
+        url: {label: Url}
+        key: {label: Key}
+        secret: {label: Secret}
+        description: {label: Description}
+        height: {label: Height}
+        send_name: {label: Send name}
+        send_email: {label: Send email}
+        open_in_popup: {label: Open in popup}
+        custom_parameters: {label: Custom parameters}
+      list:
+        title: External Application Setup Management
+        display: [name, title, url, key, secret]
+        object_actions:
+          _show: ~
+          _edit: ~
+          launch:
+            label: Launch Test
+          _delete: ~
+      filter:
+        display: [name, title, url]
+      form:    ~
+      edit:
+        title: Modifying external application settings of "%%name%%"
+        actions:
+          _save: ~
+          _list:
+            label: Cancel
+      new:
+        title: Insert new configuration of external application
+        actions:
+          _save: ~
+          _save_and_add: ~
+          _list:
+            label: Cancel
+      show:
+        title: External Application "%%name%%"
+        display: [name, title, url, key, secret, description, height]
