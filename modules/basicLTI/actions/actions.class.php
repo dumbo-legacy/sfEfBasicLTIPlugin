@@ -10,7 +10,7 @@ require_once dirname(__FILE__).'/../lib/basicLTIGeneratorHelper.class.php';
  * @package    sfEfBasicLTIPlugin
  * @subpackage basicLTI
  * @author     Yaismel Miranda <yaismelmp@googlemail.com>
- * @version    SVN: $Id: actions.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ * @version    1.0
  */
 class basicLTIActions extends BasebasicLTIActions
 {
@@ -18,6 +18,7 @@ class basicLTIActions extends BasebasicLTIActions
   {
     $resource_id = $request->getParameter('id');
 
+    // Get LMS parameters with BasicLTIparamsBuilder class
     $resource = BasicLTIparamsBuilder::getLMSResource($resource_id);
     $context = BasicLTIparamsBuilder::getLMSContext();
     $user = BasicLTIparamsBuilder::getLMSUser();
@@ -41,6 +42,7 @@ class basicLTIActions extends BasebasicLTIActions
     return $this->renderText($content);
   }
 
+  // Test action
   public function executeTest(sfWebRequest $request)
   {
     $external_tool = $request->getParameter('tool_id', 2);
