@@ -1,5 +1,13 @@
 <?php
 
+/**
+ * sfEfBasicLTISetup form.
+ *
+ * @package    sfEfBasicLTIPlugin
+ * @subpackage form
+ * @author     Yaismel Miranda <yaismelmp@googlemail.com>
+ * @version    SVN: $Id: sfEfBasicLTISetupForm.class.php ympons $
+ */
 class sfEfBasicLTISetupForm extends BaseForm
 {
   public function  configure()
