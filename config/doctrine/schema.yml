@@ -1,0 +1,36 @@
+basiclti:
+  actAs: [Timestampable]
+  columns:
+    id:
+      type: integer
+      primary: true
+    name:
+      type: string(255)
+      notnull: true
+    title:
+      type: string(255)
+      notnull: true
+    description:
+      type: string(255)
+    url:
+      type: string(255)
+      notnull: true
+    key:
+      type: string(128)
+      notnull: true
+    secret:
+      type: string(128)
+      notnull: true
+    height:
+      type: string(128)
+    send_name:
+      type: boolean
+      default: false
+    send_email:
+      type: boolean
+      default: false
+    open_in_popup:
+      type: boolean
+      default: false
+    custom_parameters:
+      type: string(255)
