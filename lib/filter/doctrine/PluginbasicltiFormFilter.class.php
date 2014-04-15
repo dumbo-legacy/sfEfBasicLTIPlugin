@@ -3,10 +3,10 @@
 /**
  * Pluginbasiclti form.
  *
- * @package    ##PROJECT_NAME##
+ * @package    sfEfBasicLTIPlugin
  * @subpackage filter
- * @author     ##AUTHOR_NAME##
- * @version    SVN: $Id: sfDoctrineFormFilterPluginTemplate.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
+ * @author     Yaismel Miranda <yaismelmp@googlemail.com>
+ * @version    SVN: $Id: PluginbasicltiFormFilter.class.php 23810 2009-11-12 11:07:44Z Kris.Wallsmith $
  */
 abstract class PluginbasicltiFormFilter extends BasebasicltiFormFilter
 {
